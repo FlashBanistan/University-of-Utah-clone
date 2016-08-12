@@ -1,3 +1,4 @@
+
 html{
   width: 100%;
   height: 100%;
@@ -51,7 +52,8 @@ body{
   background-image: url("../images/google-logo.png");
   background-repeat: no-repeat;
   background-size: contain;
-  /*padding-left: 80px;*/
+  padding-left: 80px;
+  border: 1px solid grey;
 }
 /*#search-bar:focus{
   background-image: none;
@@ -64,6 +66,9 @@ body{
   width: 100%;
   float: right;
   background-color: #333333;
+}
+.nav-bar-container{
+  width: 57%;
 }
 .nav-bar-list{
   display: flex;
@@ -91,35 +96,77 @@ body{
   bottom: 0;
 }
 .main-carousel{
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 76%;
   height: 100%;
   background-color: black;
-  opacity: .5;
+  opacity: .4;
 }
 .main-carousel-top{
-  width: 100%;
+  position: absolute;
+  margin-left: 20px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 76%;
   height: 70%;
   color: white;
+  font-family: sans-serif;
   /*background-color: yellow;*/
 }
 .main-carousel-bottom{
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  height: 30%;
-  background-color: green;
+  width: 76%;
+  height: 28%;
 }
 .main-carousel-bottom-left{
+  position: absolute;
+  color: white;
+  font-size: .9em;
+  text-align: center;
+  padding: 8px;
   width: 12%;
   height: 100%;
-  background-color: red;
+  background-color: rgb(204, 0, 0);
 }
 .main-carousel-bottom-right{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   width: 12%;
   height: 100%;
-  background-color: blue;
+  /*background-color: blue;*/
+}
+#main-carousel-header1{
+  font-size: 50px;
+}
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+
+  border-left: 10px solid white;
+}
+.circle{
+  width: 25px;
+	height: 25px;
+	background: #7a7976;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+.arrow-right, .circle{
+  margin-left: 5px;
 }
 
 /* Footer */
@@ -152,6 +199,7 @@ body{
 .footer-container > ul > li {
   padding-top: 3.84px;
   padding-bottom: 3.84;
+  margin-bottom: 7px;
 }
 .footer-container-right{
   display: flex;
@@ -174,7 +222,27 @@ body{
   flex-direction: column;
   width: 50%;
   flex-wrap: wrap;
+  margin-top: 15px;
 }
 .footer-container-right-wrapper-right{
+  margin-top: 15px;
   width: 50%;
 }
+#giving-to-the-u{
+  width: 120px;
+  font-size: 11px;
+  background-color: rgb(204, 0, 0);
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+/* ========================================================================== */
